@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Scientific Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <input type="button" class="equal" value="=" onclick="calculate()">
+        <input type="button" class="delete" value="DEL" onclick="deleteLastChar()">
+        <input type="button" class="delete" value="C" onclick="clearDisplay()">
+        <input type="button" class="parenthesis" value="(" onclick="appendToDisplay('(')">
+        <input type="button" class="parenthesis" value=")" onclick="appendToDisplay(')')">
+        <input type="button" class="trigonom-calc" value="sin" onclick="calculateSin()">
+        <input type="button" class="trigonom-calc" value="cos" onclick="calculateCos()">
+        <input type="button" class="trigonom-calc" value="tan" onclick="calculateTan()">
+        <input type="button" class="basic-calc" value="." onclick="appendToDisplay('.')">
+        <input type="button" class="number" value="7" onclick="appendToDisplay('7')">
+        <input type="button" class="number" value="8" onclick="appendToDisplay('8')">
+        <input type="button" class="number" value="9" onclick="appendToDisplay('9')">
+        <input type="button" class="basic-calc" value="+" onclick="appendToDisplay('+')">
+        <input type="button" class="number" value="4" onclick="appendToDisplay('4')">
+        <input type="button" class="number" value="5" onclick="appendToDisplay('5')">
+        <input type="button" class="number" value="6" onclick="appendToDisplay('6')">
+        <input type="button" class="basic-calc" value="-" onclick="appendToDisplay('-')">
+        <input type="button" class="number" value="1" onclick="appendToDisplay('1')">
+        <input type="button" class="number" value="2" onclick="appendToDisplay('2')">
+        <input type="button" class="number" value="3" onclick="appendToDisplay('3')">
+        <input type="button" class="basic-calc" value="*" onclick="appendToDisplay('*')">
+        <input type="button" class="sqrt-calc" value=" ^" onclick="appendToDisplay('**')">
+        <input type="button" class="number" value="0" onclick="appendToDisplay('0')">
+        <input type="button" class="sqrt-calc" value="sqrt" onclick="calculateSqrt()">
+        <input type="button" class="basic-calc" value="/" onclick="appendToDisplay('/')">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
